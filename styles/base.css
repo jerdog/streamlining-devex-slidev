@@ -1,0 +1,56 @@
+.multiCol {
+    display: table;
+    table-layout: fixed; 
+    width: 100%;
+    text-align: center; 
+    .col {
+        display: table-cell;
+        vertical-align: middle;
+        width: 50%;
+        padding: 2% 0 2% 3%; 
+        &:first-of-type { padding-left: 0; } 
+    }
+}
+
+.slidev-layout.default h1::before, .slidev-layout[layout="default"] h1::before {background: var(--slidev-theme-accents-blue);}
+.slidev-layout.default h2::before, .slidev-layout[layout="default"] h2::before {background: var(--slidev-theme-accents-yellow);}
+
+h2 {
+    background: var(--slidev-theme-accents-yellow);
+    transform: rotate(-1deg);
+    color: var(--slidev-theme-default-headingColor);
+    margin-left: -0.25em;
+    margin-top: -0.25em;
+    box-shadow: var(--slidev-theme-header-shadow);
+    display: inline-block;
+    padding: 0.25em;
+    position: relative;
+    margin-bottom: 1em;
+    z-index: 1;
+}    
+
+.slidev-layout th {
+    text-align: left;
+    padding: 0.2em 0.5em 0.2em 0.5em;
+    border-bottom: 1px solid;
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+.slidev-layout td {
+    text-align: left;
+    padding: 0.2em 0.5em 0.2em 0.5em;
+    border-bottom: 1px solid;
+}
+
+.slidev-layout table {
+    padding-top: 2em;
+    border-collapse: collapse;
+    width: 85%;
+    margin-bottom: 1em;
+    margin-top: 1em;
+}
+
+div.twitter-tweet-rendered {
+    min-width: 500px;
+}
