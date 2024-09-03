@@ -1,0 +1,53 @@
+name: build-and-deploy
+
+on: [push]
+
+env:
+  BRANCH_NAME: ${{ github.ref_name }}
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout code
+        uses: actions/checkout@v4
+      - name: setup node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+#          cache: "npm"
+      - name: install slidevjs + playwright
+        run: 'npm i -g @slidev/cli && npm i -D playwright-chromium'
+      - name: build slides
+        run: 'yes | slidev build'
+#      - name: upload build
+#        uses: actions/upload-artifact@v3
+#        with:
+#          name: build
+#          path: dist
+      - name: Install Netlify
+        run: npm install netlify-cli@17.27.0 -g
+      - name: Deploy to Netlify
+        id: netlify_deploy
+        run: |
+          prod_flag=""
+          if [ "$BRANCH_NAME" = "main" ]; then prod_flag="--prod"; fi
+          netlify deploy \
+            --dir dist \
+            --site ${{ secrets.NETLIFY_SITE_ID }} \
+            --auth ${{ secrets.NETLIFY_AUTH_TOKEN }} \
+            $prod_flag
+            
+#  deploy:
+#    needs: build
+#    runs-on: ubuntu-latest
+#    name: 'Deploy to Netlify'
+#    steps:
+#      - uses: jsmrcaga/action-netlify-deploy@v2.0.0
+#        with:
+#          build_directory: dist
+#          build_command: 'npm i -g @slidev/cli ; npm i -D playwright-chromium ; yes | slidev build'
+#          NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
+#          NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
+#          NETLIFY_DEPLOY_MESSAGE: "Prod deploy v${{ github.ref }}"
+#          NETLIFY_DEPLOY_TO_PROD: true
