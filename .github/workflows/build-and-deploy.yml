@@ -9,24 +9,16 @@ jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
     steps:
-      - name: checkout code
-        uses: actions/checkout@v4
-      - name: setup node
-        uses: actions/setup-node@v4
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
         with:
           node-version: lts/*
-#          cache: "npm"
       - name: install slidevjs + playwright
         run: 'npm i -g @slidev/cli && npm i -D playwright-chromium'
       - name: install dependencies
         run: 'npm i'
       - name: build slides
         run: 'yes | slidev build'
-#      - name: upload build
-#        uses: actions/upload-artifact@v3
-#        with:
-#          name: build
-#          path: dist
       - name: Install Netlify
         run: npm install netlify-cli@17.27.0 -g
       - name: Deploy to Netlify
@@ -40,7 +32,16 @@ jobs:
             --site ${{ secrets.NETLIFY_SITE_ID }} \
             --auth ${{ secrets.NETLIFY_AUTH_TOKEN }} \
             $prod_flag
-            
+# here is where we will attempt caching
+      - name: Cache node modules
+        uses: actions/cache@v3
+        env:
+          cache-name: node-modules
+        with:
+          path: ~/.npm
+          key: ${{ runner.os }}-build-${{ env.cache-name }}-${{ hashFiles('**/package-lock.json') }}
+          restore-keys: |
+            ${{ runner.os }}-build            
 #  deploy:
 #    needs: build
 #    runs-on: ubuntu-latest
