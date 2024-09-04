@@ -11,11 +11,11 @@ info: |
   In this talk, we delve into the core aspects of CI/CD which can significantly impact Developer Experience: Pipeline Standardization and Interoperability. We'll explore the pivotal role of standardized practices in CI/CD pipelines, fostering consistency and reducing friction in the development lifecycle. We will also look at how well-defined pipeline architecture and standardized configurations, can empower developers with a smoother and more efficient workflow.
   
   We will also discuss the critical importance of interoperability in CI/CD systems. Enabling seamless collaboration across the diverse toolsets and environments that exist today is a core advantage of interoperability. This enhancing flexibility, and allows teams to leverage their preferred tools without compromising the overall development pipeline.
-conference: "devopsdays portugal 2024"
+conference: "devopsdays des moines 2024"
 keywords: devex,developer experience,devops,ci/cd
 presenter: true
 download: true
-exportFilename: dodporto2024-streamline-devex-slidevExport
+exportFilename: dod-desmoines-2024-streamline-devex-slidevExport
 export:
   format: pdf
   timeout: 30000
