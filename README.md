@@ -31,6 +31,11 @@ npm run dev
 ```
 3. Visit <http://localhost:3030>
 
+## Dependencies
+
+- Slidev (https://sli.dev) (included in project)
+- Netlify CLI (https://cli.netlify.com) (included in project)
+
 ## About Slidev
 
 Learn more about Slidev at the [documentation](https://sli.dev/).
