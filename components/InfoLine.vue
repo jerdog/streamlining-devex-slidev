@@ -6,7 +6,7 @@
 		<!-- <div class="flex-1 p-1" style="background:#191959">
 			{{ $slidev.configs.author || "Unknown author" }}
 		</div> -->
-		<div class="flex-1 p-1" style="background:#262686;">
+		<div class="flex-1 p-3" style="background:#262686;">
 			<img src="/images/twitter-iamjerdog.png" width="25%" style="display:inline; float: right;">
 		</div>
 	</footer>

@@ -1,9 +1,12 @@
 [build]
 publish = "dist"
-command = "npm run build"
+command = "npm i -D playwright-chromium && npm run build"
 
 [build.environment]
 NODE_VERSION = "20"
+
+[context.branch-deploy]
+publish = "dist"
 
 [[redirects]]
 from = "/.well-known/*"
