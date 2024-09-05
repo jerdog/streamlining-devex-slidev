@@ -13,18 +13,8 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: lts/*
-## Include these as part of the project
-#      - name: install slidevjs + playwright
-#        run: 'npm i -g @slidev/cli && npm i -D playwright-chromium'
-      - name: Install slidev cli
-        run: 'npm i -g @slidev/cli'
-      # - name: Restore cache
-      #   uses: actions/cache/restore@v4
-      #   id: cache
-      #   with:
-      #     path: ~/.npm
-      #     key: ${{ runner.os }}-build-${{ env.cache-name }}-${{ hashFiles('**/package-lock.json') }}
-      #     #fail-on-cache-miss: true
+      - name: install slidevjs + playwright
+        run: 'npm i -g @slidev/cli && npm i -D playwright-chromium'
 # here is where we will attempt caching
       - name: Get npm cache directory
         id: npm-cache-dir

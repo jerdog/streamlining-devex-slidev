@@ -8,20 +8,15 @@
     "export": "slidev export"
   },
   "dependencies": {
+    "@iconify-json/emojione-monotone": "^1.2.0",
     "@slidev/cli": "^0.49.29",
     "@slidev/theme-default": "latest",
     "@slidev/theme-seriph": "latest",
     "slidev-addon-rabbit": "^0.3.0",
     "slidev-theme-the-unnamed": "^0.0.20",
-    "playwright-chromium": "^1.46.1",
     "vue": "^3.4.38"
   },
   "devDependencies": {
-    "@slidev/cli": "^0.49.29",
-    "@iconify-json/emojione-monotone": "^1.2.0",
-    "netlify-cli": "^17.34.3",
-    "slidev-addon-rabbit": "^0.3.0",
-    "slidev-theme-the-unnamed": "^0.0.20",
-    "playwright-chromium": "^1.46.1"
+    "netlify-cli": "^17.34.3"
   }
 }
