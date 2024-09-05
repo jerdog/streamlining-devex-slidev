@@ -23,15 +23,15 @@ jobs:
         id: cache
         with:
           path: ~/.npm
-          key: ${{ runner.os }}-build-${{ env.node-modules }}-${{ hashFiles('**/package-lock.json') }}
+          key: ${{ runner.os }}-build-${{ env.cache-name }}-${{ hashFiles('**/package-lock.json') }}
           #fail-on-cache-miss: true
       - name: install dependencies
         if: steps.cache.outputs.cache-hit != 'true'
         run: 'npm i'
       - name: build slides
         run: 'yes | slidev build'
-      - name: Install Netlify
-        run: npm install netlify-cli@17.27.0 -g
+#      - name: Install Netlify
+#        run: npm install netlify-cli@17.27.0 -g
       - name: Get short commit SHA
         id: vars
         run: echo "sha_short=$(git rev-parse --short HEAD)" >> $GITHUB_OUTPUT
