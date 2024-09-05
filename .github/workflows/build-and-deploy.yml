@@ -18,13 +18,24 @@ jobs:
 #        run: 'npm i -g @slidev/cli && npm i -D playwright-chromium'
       - name: Install slidev cli
         run: 'npm i -g @slidev/cli'
-      - name: Restore cache
-        uses: actions/cache/restore@v4
+      # - name: Restore cache
+      #   uses: actions/cache/restore@v4
+      #   id: cache
+      #   with:
+      #     path: ~/.npm
+      #     key: ${{ runner.os }}-build-${{ env.cache-name }}-${{ hashFiles('**/package-lock.json') }}
+      #     #fail-on-cache-miss: true
+# here is where we will attempt caching
+      - name: Cache node modules
+        uses: actions/cache@v4
         id: cache
+        env:
+          cache-name: node-modules
         with:
           path: ~/.npm
           key: ${{ runner.os }}-build-${{ env.cache-name }}-${{ hashFiles('**/package-lock.json') }}
-          #fail-on-cache-miss: true
+          restore-keys: |
+            ${{ runner.os }}-build
       - name: install dependencies
         if: steps.cache.outputs.cache-hit != 'true'
         run: 'npm i'
@@ -46,13 +57,3 @@ jobs:
             --site ${{ secrets.NETLIFY_SITE_ID }} \
             --auth ${{ secrets.NETLIFY_AUTH_TOKEN }} \
             $prod_flag
-# here is where we will attempt caching
-      - name: Cache node modules
-        uses: actions/cache@v4
-        env:
-          cache-name: node-modules
-        with:
-          path: ~/.npm
-          key: ${{ runner.os }}-build-${{ env.cache-name }}-${{ hashFiles('**/package-lock.json') }}
-          restore-keys: |
-            ${{ runner.os }}-build            
