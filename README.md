@@ -14,8 +14,8 @@ We will also discuss the critical importance of interoperability in CI/CD system
 
 Below are the conferences and events where this particular talk was presented using Slidev.
 
-- DevOpsDays Porto
-- DevOpsDays Des Moines
+- DevOpsDays Porto 2024: https://dodporto-24--streamlining-devex-slidev.netlify.app/
+- DevOpsDays Des Moines 2024: https://dod-desmoines-2024--streamlining-devex-slidev.netlify.app/
 
 ## Local Development / Viewing
 
@@ -35,8 +35,15 @@ npm run dev
 
 - Slidev (https://sli.dev) (included in project)
 - Netlify CLI (https://cli.netlify.com) (included in project)
-- Playwright-Chromium (https://playwright.dev) (included in project)
 
-## About Slidev
+## LICENSE
 
-Learn more about Slidev at the [documentation](https://sli.dev/).
+Shield: [![CC BY-SA 4.0][cc-by-sa-shield]][cc-by-sa]
+
+This work is licensed under a [Creative Commons Attribution-ShareAlike 4.0 International License][cc-by-sa].
+
+[![CC BY-SA 4.0][cc-by-sa-image]][cc-by-sa]
+
+[cc-by-sa]: https://creativecommons.org/licenses/by-sa/4.0/
+[cc-by-sa-image]: https://licensebuttons.net/l/by-sa/4.0/88x31.png
+[cc-by-sa-shield]: https://img.shields.io/badge/License-CC%20BY--SA%204.0-lightgrey.svg
