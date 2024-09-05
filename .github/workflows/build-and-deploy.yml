@@ -21,6 +21,9 @@ jobs:
         run: 'yes | slidev build'
       - name: Install Netlify
         run: npm install netlify-cli@17.27.0 -g
+      - name: Get short commit SHA
+        id: vars
+        run: echo "sha_short=$(git rev-parse --short HEAD)" >> $GITHUB_OUTPUT
       - name: Deploy to Netlify
         id: netlify_deploy
         run: |
@@ -28,7 +31,7 @@ jobs:
           if [ "$BRANCH_NAME" = "main" ]; then prod_flag="--prod"; fi
           netlify deploy \
           --dir dist \
-          --message "CLI deploy via ${{ github.ref_name }}, commit ${{ github.sha }}" \
+          --message "CLI deploy via ${{ github.ref_name }}: commit ${{ steps.vars.outputs.sha_short }}, ${{ github.event.commits[0].message }}" \
             --site ${{ secrets.NETLIFY_SITE_ID }} \
             --auth ${{ secrets.NETLIFY_AUTH_TOKEN }} \
             $prod_flag
