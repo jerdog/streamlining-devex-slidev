@@ -26,16 +26,18 @@ jobs:
       #     key: ${{ runner.os }}-build-${{ env.cache-name }}-${{ hashFiles('**/package-lock.json') }}
       #     #fail-on-cache-miss: true
 # here is where we will attempt caching
+      - name: Get npm cache directory
+        id: npm-cache-dir
+        shell: bash
+        run: echo "dir=$(npm config get cache)" >> ${GITHUB_OUTPUT}
       - name: Cache node modules
         uses: actions/cache@v4
         id: cache
-        env:
-          cache-name: node-modules
         with:
-          path: ~/.npm
-          key: ${{ runner.os }}-build-${{ env.cache-name }}-${{ hashFiles('**/package-lock.json') }}
+          path: ${{ steps.npm-cache-dir.outputs.dir }}
+          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
           restore-keys: |
-            ${{ runner.os }}-build
+            ${{ runner.os }}-node-
       - name: install dependencies
         if: steps.cache.outputs.cache-hit != 'true'
         run: 'npm i'
