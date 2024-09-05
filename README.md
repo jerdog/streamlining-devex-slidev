@@ -10,13 +10,26 @@ In this talk, we delve into the core aspects of CI/CD which can significantly im
 
 We will also discuss the critical importance of interoperability in CI/CD systems. Enabling seamless collaboration across the diverse toolsets and environments that exist today is a core advantage of interoperability. This enhancing flexibility, and allows teams to leverage their preferred tools without compromising the overall development pipeline.
 
-## Demo
+## Conferences and Events
 
-To start the slide show:
+Below are the conferences and events where this particular talk was presented using Slidev.
 
-- `npm install`
-- `npm run dev`
-- visit <http://localhost:3030>
+- DevOpsDays Porto
+- DevOpsDays Des Moines
+
+## Local Development / Viewing
+
+1. Clone the repo
+```bash
+git clone https://github.com/jerdog/streamlining-devex-slidev.git
+cd streamlining-devex-slidev
+```
+2. Install dependencies and run the dev server
+```bash
+npm install
+npm run dev
+```
+3. Visit <http://localhost:3030>
 
 ## About Slidev
 
