@@ -16,6 +16,8 @@ jobs:
 ## Include these as part of the project
 #      - name: install slidevjs + playwright
 #        run: 'npm i -g @slidev/cli && npm i -D playwright-chromium'
+      - name: Install slidev cli
+        run: 'npm i -g @slidev/cli'
       - name: Restore cache
         uses: actions/cache/restore@v4
         id: cache
