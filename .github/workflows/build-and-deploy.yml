@@ -15,7 +15,6 @@ jobs:
           node-version: lts/*
       - name: install slidevjs + playwright
         run: 'npm i -g @slidev/cli && npm i -D playwright-chromium'
-# here is where we will attempt caching
       - name: Get npm cache directory
         id: npm-cache-dir
         shell: bash
@@ -33,8 +32,6 @@ jobs:
         run: 'npm i'
       - name: build slides
         run: 'yes | slidev build'
-#      - name: Install Netlify
-#        run: npm install netlify-cli@17.27.0 -g
       - name: Get short commit SHA
         id: vars
         run: echo "sha_short=$(git rev-parse --short HEAD)" >> $GITHUB_OUTPUT
