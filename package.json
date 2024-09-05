@@ -16,6 +16,7 @@
     "vue": "^3.4.38"
   },
   "devDependencies": {
-    "@iconify-json/emojione-monotone": "^1.2.0"
+    "@iconify-json/emojione-monotone": "^1.2.0",
+    "playwright-chromium": "^1.46.1"
   }
 }

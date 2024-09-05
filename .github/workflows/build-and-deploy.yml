@@ -13,9 +13,18 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: lts/*
-      - name: install slidevjs + playwright
-        run: 'npm i -g @slidev/cli && npm i -D playwright-chromium'
+## Include these as part of the project
+#      - name: install slidevjs + playwright
+#        run: 'npm i -g @slidev/cli && npm i -D playwright-chromium'
+      - name: Restore cache
+        uses: actions/cache/restore@v4
+        id: cache
+        with:
+          path: ~/.npm
+          key: ${{ runner.os }}-build-${{ env.cache-name }}-${{ hashFiles('**/package-lock.json') }}
+          #fail-on-cache-miss: true
       - name: install dependencies
+        if: steps.cache.outputs.cache-hit != 'true'
         run: 'npm i'
       - name: build slides
         run: 'yes | slidev build'
