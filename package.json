@@ -13,11 +13,11 @@
     "@slidev/theme-seriph": "latest",
     "slidev-addon-rabbit": "^0.3.0",
     "slidev-theme-the-unnamed": "^0.0.20",
+    "playwright-chromium": "^1.46.1",
     "vue": "^3.4.38"
   },
   "devDependencies": {
     "@iconify-json/emojione-monotone": "^1.2.0",
-    "netlify-cli": "^17.34.3",
-    "playwright-chromium": "^1.46.1"
+    "netlify-cli": "^17.34.3"
   }
 }
