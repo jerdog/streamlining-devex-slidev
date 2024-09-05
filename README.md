@@ -35,6 +35,7 @@ npm run dev
 
 - Slidev (https://sli.dev) (included in project)
 - Netlify CLI (https://cli.netlify.com) (included in project)
+- Playwright-Chromium (https://playwright.dev) (included in project)
 
 ## About Slidev
 
