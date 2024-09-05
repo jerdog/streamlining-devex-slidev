@@ -17,6 +17,7 @@
   },
   "devDependencies": {
     "@iconify-json/emojione-monotone": "^1.2.0",
+    "netlify-cli": "^17.34.3",
     "playwright-chromium": "^1.46.1"
   }
 }
