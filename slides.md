@@ -41,6 +41,10 @@ mdc: true
 defaults:           # default frontmatter applies to all slides
   layout: center    # https://sli.dev/builtin/layouts#layouts
   transition: fade  # slide transition: https://sli.dev/guide/animations.html#slide-transitions
+addons:
+  - slidev-addon-rabbit
+rabbit:
+  slideNum: true
 layout: cover
 transition: slide-left
 ---
