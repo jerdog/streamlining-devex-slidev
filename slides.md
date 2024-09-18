@@ -544,16 +544,7 @@ In essence, implementing CI/CD interoperability acts as a bridge, connecting dif
 
 <!--
 Implementing interoperability between your various systems and CI/CD pipelines is essential, but not without its challenges, nor remedies.
--->
-
----
-layout: image
-image: "/images/slides/37-efficiences.jpeg"
-backgroundSize: contain
----
-
-<!--
-By applying these strategies and tips, organizations can overcome the common interoperability challenges and establish robust connections between Spinnaker, Backstage, and other CI/CD tools, fostering a more seamless and integrated development ecosystem.The efficiencies gained by making sure you're using tools that provide CI/CD standardization as well as being interoperable between all of the systems your developers are using is at the core of what Developer Experience really is about…
+You can overcome many of the challenges by prioritizing the critical dependencies, objectives, and implementing unified data formats, standardizing methods, establishing clear versioning policies, and allocating resources to implement the standards and processes necessary for good documentation.
 -->
 
 ---
