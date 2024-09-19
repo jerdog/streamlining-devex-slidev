@@ -17,6 +17,6 @@
     "vue": "^3.4.38"
   },
   "devDependencies": {
-    "netlify-cli": "^17.34.3"
+    "netlify-cli": "^17.36.1"
   }
 }
