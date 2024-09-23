@@ -75,8 +75,8 @@ layout: intro
 <div class="multiCol">
     <div class="col">
         <h2 style="color: rgb(111, 168, 220);">Jeremy Meiss</h2>
-        <p style="font-weight: bold; font-size: 1em;">Co-Founder, DevEx Consultant</p>
-        <p style="font-size: 1em;"><em>DevEx Institute</em></p>
+        <p style="font-weight: bold; font-size: 1em;">DevEx / DevRel Consultant</p>
+        <!-- <p style="font-size: 1em;"><em>DevEx Institute</em></p> -->
         <!-- <p style="font-size: 0.8em;"><a href="https://devex.institute" target="_blank">https://DevEx.Institute</a></p> -->
         <p>DevOpsDays Kansas City Organizer</p>
     </div>
