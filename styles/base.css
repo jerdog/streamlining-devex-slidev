@@ -10,6 +10,9 @@
         padding: 2% 0 2% 3%; 
         &:first-of-type { padding-left: 0; } 
     }
+    .col img {
+        margin: auto;
+    }
 }
 
 .slidev-layout.default h1::before, .slidev-layout[layout="default"] h1::before {background: var(--slidev-theme-accents-blue);}
