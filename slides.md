@@ -254,7 +254,7 @@ layout: default
 - Enforce coding standards for consistency and readability
 
 <!--
-When selecting tooling, prioritize compatibility and ease of integration with existing systems and align with standardized practices. Make sure that you are able to use templating and can standardize your configs so you bring consistency throughout the CI/CD process. Whatever you select must be aligned with your organization’s specific requirements and objectives, and the templates and patterns you base your standardization efforts on must be consistent and reliable across all of your projects, but also flexible enough to adapt to project-specific requirements. Easy, right?
+When selecting tooling, prioritize compatibility and ease of integration with existing systems and align with standardized practices. Make sure that you are able to use templating and can standardize your configs so you bring consistency throughout the CI/CD process. The templates and patterns you base your standardization efforts on must be consistent and reliable across all of your projects, but also flexible enough to adapt to project-specific requirements. Easy, right?
 -->
 
 ---
@@ -268,7 +268,7 @@ layout: default
 - Implement branching and pull request strategies
 
 <!--
-- Store CI/CD pipeline configurations as code in version control systems (e.g., Git). This practice ensures that configurations are versioned, traceable, and easily revertible.
+- **Store CI/CD pipeline configurations as code in version control systems (e.g., Git) to ensure configs are are versioned, traceable, and easily revertible.**
 - Implement branching and pull request strategies to manage changes to CI/CD configurations.
 -->
 
@@ -283,8 +283,7 @@ layout: default
 - Implement code reviews and peer validation early in dev process
 
 <!--
-- Integrate automated testing and validation into the pipeline templates to ensure that standardized configurations produce expected results.
-- Implement code reviews and peer validation to catch configuration errors early in the development process.
+- Integrate automated testing and validation into the pipeline templates so your standardized configurations produce expected results. And catch errors early in the dev process by implementing code reviews and peer validation.
 -->
 
 ---
@@ -298,8 +297,7 @@ layout: default
 - Provide training to ensure understanding and effective use
 
 <!--
-- Create comprehensive documentation that outlines the standardized CI/CD processes, including workflows, configurations, and best practices.
-- Provide training sessions for development teams to ensure they understand and can effectively use the standardized CI/CD pipeline templates.
+- Create comprehensive docs that outlines the entire process, and provide training sessions for all your teams to ensure they understand and can effectively use those templates.
 -->
 
 ---
@@ -310,7 +308,7 @@ backgroundSize: contain
 # Optimizing CI/CD Standardization
 
 <!--
-Once you’ve ensured the core practices are in place, it’s time to look at some key, optimized practices that can help you take the next step in your standardization efforts.
+Once you have the core practices in place, it’s time to look at some key, optimized practices that can help you take the next step in your standardization efforts.
 -->
 
 ---
@@ -325,8 +323,7 @@ backgroundSize: contain
 - Establish culture of regular reviews and updating pipelines
 
 <!--
-- Set up monitoring and alerting for your CI/CD pipelines to detect issues and bottlenecks in real-time.
-- Establish a culture of continuous improvement by regularly reviewing and updating standardized pipelines based on feedback and evolving project requirements.
+- Set up monitoring and alerting to detect issues and bottlenecks in real-time, and establish a culture of continuous improvement by regularly reviewing and updating those standardized pipelines based on the feedback you get and evolve your project requirements.
 -->
 
 ---
@@ -342,8 +339,7 @@ backgroundSize: contain
 - Regularly audit and assess adherence to standardized practices
 
 <!--
-- Implement governance policies to enforce pipeline standardization and compliance with industry regulations or internal standards.
-- Regularly audit and assess the adherence to standardized practices.
+- Implement governance policies to enforce pipeline standardization and compliance with industry regulations or internal standards, and regularly audit and assess the adherence to standardized practices.
 -->
 
 ---
@@ -358,8 +354,7 @@ backgroundSize: contain
 - Maintain flexibility to accommodate unique project requirements
 
 <!--
-- Ensure that the standardized pipeline templates can scale and adapt to different project types, sizes, and technologies.
-- Maintain flexibility to accommodate unique project requirements while adhering to standardized core practices.
+- Ensure your templates can scale and adapt to different project types, sizes, and technologies so you can maintain flexibility to accommodate unique project requirements.
 -->
 
 ---
@@ -374,8 +369,7 @@ backgroundSize: contain
 - Continuously communicate benefits of standardized pipelines & celebrate successes
 
 <!--
-- Foster a collaborative environment where developers can provide feedback and contribute to improving CI/CD standardization practices.
-- Continuously communicate the benefits of standardized pipelines and celebrate successes.
+- Foster a collaborative environment where developers can provide feedback and contribute to improving your practices, and then continuously communicate the benefits of standardized pipelines and celebrate successes.
 -->
 
 ---
@@ -395,7 +389,7 @@ Implementing these better practices will help you improve your CI/CD pipeline an
 - fosters flexibility in development environments
 
 <!--
-Interoperable systems refers to the ability of different tools, technologies, and components within a CI/CD ecosystem to work seamlessly together. It ensures that your various pipeline parts, including source code repositories, build systems, testing frameworks, deployment platforms, and monitoring tools, can communicate, integrate, and exchange data effectively without compatibility issues or disruptions.
+When I talk about an "Interoperable systems", I am referring to the ability of different tools, technologies, and components within a CI/CD ecosystem to work seamlessly together. It ensures that your various pipeline parts, including source code repositories, build systems, testing frameworks, deployment platforms, and monitoring tools, can communicate, integrate, and exchange data effectively without compatibility issues or disruptions.
 
 -->
 
@@ -412,7 +406,8 @@ backgroundSize: contain
 - Deliver faster with higher quality + better developer experience
 
 <!--
-Streamlined workflows in CI/CD systems refers to the efficient and optimized processes that enable the continuous integration, delivery, and deployment of software applications. It's about minimizing manual effort by automating repetitive tasks like building, testing, and deploying applications, speeding up software delivery cycles. Reduce development overhead by removing unnecessary steps and redundant processes, freeing developers to focus on core activities and maximize productivity. Streamlined workflows lead to faster software delivery, improved product quality through automation, and a better developer experience due to smoother workflows and less manual intervention.
+Streamlined workflows is about having efficient and optimized processes that enable the continuous integration, delivery, and deployment of software applications. Minimize manual effort by automating repetitive tasks like building, testing, and deploying applications, speeding up software delivery cycles. Humans are really bad at reptition. 
+Streamlined workflows lead to faster software delivery, improved product quality through automation, and a better developer experience due to smoother workflows and less manual intervention.
 -->
 
 ---
@@ -428,7 +423,7 @@ backgroundSize: contain
 - Leverage strengths and expertise of each team
 
 <!--
-Cross-functional collaboration becomes necessary to drive innovation, efficiency, and customer value through your CI/CD systems, especially when you have varying tool preferences or use different systems between departments. Reduce miscommunication by fostering a shared understanding of project goals across Development, Operations, QA, and other teams, allowing everyone to work towards the same objectives. Share knowledge, tools, and infrastructure to optimize your resource allocation, maximize productivity, and reduces delays. Leverage the diverse strengths and expertise of each team, and foster innovation, improve your problem-solving, and ultimately deliver high-quality software products.
+You need cross-functional collaboration to drive innovation, efficiency, and customer value through your CI/CD systems, especially when you have varying tool preferences or use different systems between departments. Reduce miscommunication when you have a shared understanding of project goals across Development, Operations, QA, and other teams, so everyone is aligned and working towards the same objectives. Share knowledge, tools, and infrastructure to optimize your resources, maximize productivity, and reduces delays. Leverage the diverse strengths and expertise of each team, and foster innovation, improve your problem-solving, and ultimately deliver high-quality software products.
 -->
 
 ---
@@ -469,7 +464,7 @@ backgroundSize: contain
 - Greater visibility + traceability via aggregation of info
 
 <!--
-Ecosystem integration in CI/CD systems involves seamlessly incorporating and interacting with various tools, services, and platforms within the software development and delivery ecosystem. From VCS, build automation, testing frameworks, deployment platforms, and observability, integration allows for assembling a customized toolchain that's tailored to your specific needs. Add in the ability to automate end-to-end processes, and you can create a more efficient and collaborative development environment and experience, and then aggregate all the information into a single view for greater visibility.
+Ecosystem integration is about seamlessly incorporating and interacting with various tools, services, and platforms within the software development and delivery ecosystem. From VCS, build automation, testing frameworks, deployment platforms, and observability, integration allows for assembling a customized toolchain that's tailored to your specific needs. Add in the ability to automate end-to-end processes, and you can create a more efficient and collaborative development environment and experience, and then aggregate all the information into a single view for greater visibility.
 -->
 
 ---
