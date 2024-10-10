@@ -7,7 +7,6 @@
 .vite-inspect
 *-export
 *.local
-*.pdf
 assets/demo
 components.d.ts
 composable-vue-cn
