@@ -180,6 +180,255 @@ I think it's important to clarify that "DevEx" by default focuses on the "develo
 
 ---
 layout: image
+image: "/images/slides/text-to-cloud.jpg"
+---
+
+
+<!--
+And we've see an evolution in Developer Experience over the years.
+
+Here's an example of how Developer Experience has evolved a particular set of tools and practices:
+-->
+
+---
+
+## The evolution of the IDE
+### Early text editors
+
+![USER FRIENDLY by Illiad, vi](/images/slides/httpatomoreillycomsourceoreillyimages2055076.png)
+REF: O'Reilly "Learning the vi and Vim Editors"
+
+<!--
+I think a great example is the evolution of Integrated Development Environments (IDEs). Prior to the 1990's, you had mostly text-based editors that were used to write code, like Vi, which evidently is supposed to be called "SIX". Who knew? It was created in 1976 and included in the first BSD linux release.
+-->
+
+---
+layout: image-left
+image: "/images/slides/IDE_evolution-1.jpg"
+backgroundSize: contain
+class: my-cool-content-on-the-right
+---
+
+## Early text editors
+
+- Emacs, 1985
+- Vim, 1991
+- `nano`, 1999
+
+<!-- Then we had Emacs in 1985, Vim in 1991, my personal favorite, `nano`. And not entirely because I can exit it without having to throw out the computer and buy a new one like I do with Vim. Saving the planet, one less computer thrown away because of Vim at a time. -->
+
+---
+layout: image-left
+image: "/images/slides/IDE_evolution-2.jpg"
+backgroundSize: contain
+class: my-cool-content-on-the-right
+---
+
+## First plug-in IDE
+
+### HP Softbench, 1989
+
+<!-- One of the first IDEs with a plug-in concept was HP Softbench, released in 1989. HP Softbench was one of the first plug-in IDEs, shipped with its own library, -->
+
+---
+layout: image-left
+image: "/images/slides/hp-softbench-manuals.jpg"
+backgroundSize: contain
+class: my-cool-content-on-the-right
+---
+
+## First plug-in IDE
+
+### HP Softbench, 1989
+
+<!--
+and was extensively talked about in the June 1990 edition of the HP Journal. 
+-->
+
+---
+layout: image-left
+image: "/images/slides/hpjournal-june1990-hpsoftbench.jpg"
+backgroundSize: contain
+class: my-cool-content-on-the-right
+---
+
+## First plug-in IDE
+
+### HP Softbench, 1989
+
+REF: [HP Journal, June 1990 edition](http://hparchive.com/Journals/HPJ-1990-06.pdf)
+
+<!--
+It's a fascinating read, as HP lays out their vision of what software architecture and development should be, including Automated Testing, distributed computing, integrated and interchangeable tools, and more. The link to the PDF is below - I highly recommend reading it
+-->
+
+---
+layout: image-left
+image: "/images/slides/giphy-thumbs-down.gif"
+backgroundSize: contain
+class: my-cool-content-on-the-right
+---
+
+# Evolution of the IDE
+
+## Early Reviews
+
+> "...the use of an IDE was not well received by developers since it would fence in their creativity."
+
+REF: _Computerwoche_ ("Computer Week", German counterpart of American magazine _Computer World_), 1995.
+
+<!--
+The early reviews of IDEs as a concept weren't great.... In 1995 Computer Week in Germany commented that the use of an IDE was not well received by developers since it would fence in their creativity.
+-->
+
+---
+layout: image-left
+image: "/images/slides/IDE_evolution-3.jpg"
+backgroundSize: contain
+class: my-cool-content-on-the-right
+---
+
+## Native IDEs in the 1980s
+
+- Turbo Pascal, 1983
+- Apple's Macintosh Programmer's Workshop, 1986
+
+<!--
+A few Native IDEs came out in the mid-80s, with Turbo Pascal in 1983 and Apple's Macintosh Programmer's Workshop in 1986.
+-->
+
+---
+layout: image-left
+image: "/images/slides/IDE_evolution-4.jpg"
+backgroundSize: contain
+class: my-cool-content-on-the-right
+---
+
+## Cross-platform in the 1990s
+
+- Borland Delphi, 1995
+
+<!--
+Borland Delphi was released in 1995 and is still around (Embarcadero Delphi v12)
+-->
+
+---
+layout: image-left
+image: "/images/slides/IDE_evolution-5.jpg"
+backgroundSize: contain
+class: my-cool-content-on-the-right
+---
+
+## The Web and the 1990s
+
+- Netscape Composer, 1995
+- FrontPage, 1995
+- SGI's WebMagic, 1995 ([story](https://therealmccrea.com/2014/12/26/webmagic-the-untold-and-rather-improbable-story-behind-the-first-wysiwyg-html-editor/))
+- Microsoft FrontPage, 1995
+
+<!--
+With the launch of the World Wide Web, and then its explosion of growth, the IDEs started becoming more graphical and had a more modern look and feel. Who remembers the first HTML WYSIWYG editor? SGI's WebMagic was released on January 25, 1995 built in less than 90 days. FrontPage (https://softpanorama.org/Office/Frontpage/history.shtml) was soon to follow in October 1995 after Microsoft acquired it from Vermeer.
+-->
+
+---
+layout: image-left
+image: "/images/slides/IDE_evolution-6.jpg"
+backgroundSize: contain
+class: my-cool-content-on-the-right
+---
+
+## Feature & Usability Advancements (1990s - 2000s)
+
+- Macromedia Dreamweaver, 1997
+- MS FrontPage 2000, 1999
+- NetBeans, 2000
+- IntelliJ IDEA, 2001
+- Eclipse, 2001
+- MS Visual Studio, 2001
+
+
+<!-- Macromedia's Dreamweaver came out in 1997 (after Macromedia acquisition of Backstage from iBand in 1996) Dreamweaver completely changed the game in many respects, as Macromedia had a history of their products getting community-sourced tools, plugins, scripts, etc. Microsoft FrontPage 2000 saw the first inclusion of plugins and integrations in early 1999 to make web management easier (FrontPage Server Extensions). NetBeans was released in 2000 for Java, with IntelliJ and Eclipse following in 2001 along with Visual Studio which offered enhanced functionality and more sophisticated features like intelligent code completion, refactoring tools, and improved version control integration. We saw a noticeable increase in support for multiple languages and frameworks, making these IDEs more versatile.
+-->
+
+---
+layout: image-left
+image: "/images/slides/IDE_evolution-7.jpg"
+backgroundSize: contain
+class: my-cool-content-on-the-right
+---
+
+## Lightweight and configurable (2010s - Now)
+
+- Sublime Text, 2008
+- Atom, 2014
+- VS Code, 2015
+
+<!--
+Late 2000s brought about more lightweight IDEs, like Sublime Text and later Atom and Visual Studio Code (VSCode) emerged, focusing on speed, user-friendly interfaces, and extensive plugin ecosystems. They catered to a broader range of developers by being less resource-intensive and more customizable. Event saw integrations with popular Ops tools as well.-->
+
+---
+layout: image-left
+image: "/images/slides/IDE_evolution-8.jpg"
+backgroundSize: contain
+class: my-cool-content-on-the-right
+---
+
+## Cloud-based options
+
+- PHPAnywhere (CodeAnywhere), 2009
+- Cloud9, 2010
+- Glitch, 2018
+- GitPod, 2019
+- GitHub Codespaces, 2020
+- Google's Project IDX, 2024
+
+<!--
+Then, we have seen the rise of the cloud and the arrival of cloud-based IDEs: The first was PHPanywhere (eventually becoming CodeAnywhere) in 2009, followed by Cloud9 in 2010 (before AWS bought it in 2016), Glitch (2018), GitPod (2019), GitHub Codespaces (2020), and Google’s Project IDX (2024). They've really changed the game by offering fully configured development environments in the cloud, accessible from anywhere, reducing the need for complex local setup. We went from this sentiment about IDEs...-->
+
+---
+
+# IDEs are a result of DevEx
+
+## Things we never knew we needed...
+
+### From this:
+
+> "...the use of an IDE was not well received by developers since it would fence in their creativity."
+
+<!--
+We went from this sentiment about IDEs...
+-->
+
+---
+
+# IDEs are a result of DevEx
+
+## Things we never knew we needed...
+
+### To this:
+
+- Code completion
+- Syntax highlighting
+- Debugging
+- VCS integration (no more FTP)
+- Multi-language support
+- Framework integration
+- Pair programming
+
+<!-- to things we never knew we needed! -->
+
+---
+layout: image
+image: "/images/slides/IDE_evolution.jpg"
+backgroundSize: contain
+---
+
+<!--
+I go through all of that to illustrate how the overall Developer Experience with software development has evolved over time, leading to where we sit with IDEs now. Things we didn't know we would want back in the 1960s are now commonplace and the expeected norm now in the 2020s.
+-->
+
+---
+layout: image
 image: "/images/slides/4-streamling-workflows.jpeg"
 ---
 
@@ -218,6 +467,7 @@ layout: default
 ---
 
 # Implementing CI/CD Standardization
+
 ## Assessment and Analysis
 
 - Thoroughly assess your current CI/CD pipelines
