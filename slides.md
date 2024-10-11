@@ -49,9 +49,9 @@ layout: cover
 transition: slide-left
 ---
 
-# Streamlining DevEx
+# Streamlining the Developer Experience
 
-## The Power of CI/CD Standardization and Interoperability
+## The Power of Standardization and Interoperability
 
 <!--
 As a quick note, I used ChatGPT + DALL-E to generate the images in this presentation, which took entirely too much time because the effort to train the model for what I was trying to get was tedious and time consuming.
@@ -59,13 +59,62 @@ Over the next few minutes I am going to touch on some core principles and better
 -->
 
 ---
-layout: image
----
 
-<img src="/images/slides/cncf-landscape.jpg" alt="CNCF Landscape" style="object-fit: contain; width: 100%; height: 100%;" />
+# DevEx as Disaster...
 
 <!--
-In the rapidly evolving landscape of modern software development, illustrated here by the CNCF landscape (as of January 29, 2024) Continuous Integration and Continuous Deployment (CI/CD) stand as transformative pillars, reshaping how software is delivered and the very experience of those crafting it.
+We've all had that experience using a tool or service that was a disaster. It could be the worst deployment process you've ever seen, or the most painful codebase you've ever had to work with, or documentation that's so confusing it makes your head spin. Or maybe a combination of them… Who here knows what I’m talking about? 
+
+We’ve all seen examples of epicly bad websites, right? 
+-->
+
+---
+layout: image
+image: /images/slides/yale-art-school.jpg
+backgroundSize: contain
+---
+
+<!--
+Here’s an epicly bad website (as of 31-Oct-2024) from none other than the Yale School of Art. So much wrong on one page.
+-->
+
+---
+
+# ...or DevEx as a Delight?
+
+---
+
+```bash
+git push heroku master
+```
+
+![Heroku deploy button](/images/slides/heroku-deploy-button.png)
+
+<!--
+Heroku was long considered the gold standard for developer experience with a simple set of tools and a command-line interface that allowed developers to focus on building applications and delivering them to users. And that was it. Now of course, Heroku is still around (albeit not nearly as developer-centric as they formerly were, but that is changing), but it's not the only game in town. Anyone used Netlify, Vercel, etc.?
+
+Who here knows what the CNCF is, or has seen this image, maybe in their nightmares?
+-->
+
+---
+layout: image-right
+image: /images/slides/cncf-landscape.jpg
+backgroundSize: contain
+class: my-cool-content-on-the-left
+---
+
+<img src="/images/slides/cncf-logo.svg" alt="cncf-logo" style="background: #fff; padding: 1em; border-radius: 1em;"/>
+
+## CNCF Landscape
+- 204 projects
+- 751 member companies
+- 873 repositories
+- 250k+ contributors
+
+_as of 11-Oct-2024_
+
+<!--
+The CNCF Landscape lists all of their projects + all of the companies and tools which are members of the foundation. Any company, or tool or service, who is anybody is essentially a member and on this 6MB PNG image. How does one choose which tool to use (or avoid)? How do you know which one is the best (or worst)?
 -->
 
 ---
@@ -211,9 +260,13 @@ class: my-cool-content-on-the-right
 
 ## Early text editors
 
+<v-clicks>
+
 - Emacs, 1985
 - Vim, 1991
 - `nano`, 1999
+
+</v-clicks>
 
 <!-- Then we had Emacs in 1985, Vim in 1991, my personal favorite, `nano`. And not entirely because I can exit it without having to throw out the computer and buy a new one like I do with Vim. Saving the planet, one less computer thrown away because of Vim at a time. -->
 
@@ -290,8 +343,12 @@ class: my-cool-content-on-the-right
 
 ## Native IDEs in the 1980s
 
+<v-clicks>
+
 - Turbo Pascal, 1983
 - Apple's Macintosh Programmer's Workshop, 1986
+
+</v-clicks>
 
 <!--
 A few Native IDEs came out in the mid-80s, with Turbo Pascal in 1983 and Apple's Macintosh Programmer's Workshop in 1986.
@@ -321,10 +378,13 @@ class: my-cool-content-on-the-right
 
 ## The Web and the 1990s
 
-- Netscape Composer, 1995
-- FrontPage, 1995
-- SGI's WebMagic, 1995 ([story](https://therealmccrea.com/2014/12/26/webmagic-the-untold-and-rather-improbable-story-behind-the-first-wysiwyg-html-editor/))
+<v-clicks>
+
+- Netscape Navigator, 1995
+- SGI WebMagic, 1995 ([story](https://therealmccrea.com/2014/12/26/webmagic-the-untold-and-rather-improbable-story-behind-the-first-wysiwyg-html-editor/))
 - Microsoft FrontPage, 1995
+
+</v-clicks>
 
 <!--
 With the launch of the World Wide Web, and then its explosion of growth, the IDEs started becoming more graphical and had a more modern look and feel. Who remembers the first HTML WYSIWYG editor? SGI's WebMagic was released on January 25, 1995 built in less than 90 days. FrontPage (https://softpanorama.org/Office/Frontpage/history.shtml) was soon to follow in October 1995 after Microsoft acquired it from Vermeer.
@@ -339,6 +399,8 @@ class: my-cool-content-on-the-right
 
 ## Feature & Usability Advancements (1990s - 2000s)
 
+<v-clicks>
+
 - Macromedia Dreamweaver, 1997
 - MS FrontPage 2000, 1999
 - NetBeans, 2000
@@ -346,6 +408,7 @@ class: my-cool-content-on-the-right
 - Eclipse, 2001
 - MS Visual Studio, 2001
 
+</v-clicks>
 
 <!-- Macromedia's Dreamweaver came out in 1997 (after Macromedia acquisition of Backstage from iBand in 1996) Dreamweaver completely changed the game in many respects, as Macromedia had a history of their products getting community-sourced tools, plugins, scripts, etc. Microsoft FrontPage 2000 saw the first inclusion of plugins and integrations in early 1999 to make web management easier (FrontPage Server Extensions). NetBeans was released in 2000 for Java, with IntelliJ and Eclipse following in 2001 along with Visual Studio which offered enhanced functionality and more sophisticated features like intelligent code completion, refactoring tools, and improved version control integration. We saw a noticeable increase in support for multiple languages and frameworks, making these IDEs more versatile.
 -->
@@ -359,9 +422,13 @@ class: my-cool-content-on-the-right
 
 ## Lightweight and configurable (2010s - Now)
 
+<v-clicks>
+
 - Sublime Text, 2008
 - Atom, 2014
 - VS Code, 2015
+
+</v-clicks>
 
 <!--
 Late 2000s brought about more lightweight IDEs, like Sublime Text and later Atom and Visual Studio Code (VSCode) emerged, focusing on speed, user-friendly interfaces, and extensive plugin ecosystems. They catered to a broader range of developers by being less resource-intensive and more customizable. Event saw integrations with popular Ops tools as well.-->
@@ -375,12 +442,16 @@ class: my-cool-content-on-the-right
 
 ## Cloud-based options
 
+<v-clicks>
+
 - PHPAnywhere (CodeAnywhere), 2009
 - Cloud9, 2010
 - Glitch, 2018
 - GitPod, 2019
 - GitHub Codespaces, 2020
 - Google's Project IDX, 2024
+
+</v-clicks>
 
 <!--
 Then, we have seen the rise of the cloud and the arrival of cloud-based IDEs: The first was PHPanywhere (eventually becoming CodeAnywhere) in 2009, followed by Cloud9 in 2010 (before AWS bought it in 2016), Glitch (2018), GitPod (2019), GitHub Codespaces (2020), and Google’s Project IDX (2024). They've really changed the game by offering fully configured development environments in the cloud, accessible from anywhere, reducing the need for complex local setup. We went from this sentiment about IDEs...-->
